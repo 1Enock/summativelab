@@ -1,5 +1,7 @@
 #wholedoc {
     background-image: url("https://plus.unsplash.com/premium_photo-1690297733164-958ea1f806ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cXVhbnR1bSUyMHBoeXNpY3N8ZW58MHx8MHx8fDA%3D");
+    width: 100%;
+    height: 100%;
 }
 h1 {
     font-size: 60px;
@@ -41,7 +43,7 @@ img {
     padding: 5%;
 }
 #firstcard {
-    background-color: white;
+    background-color: darkcyan;
     width: 30%;
     height: auto;
     border-radius: 20px;
@@ -49,9 +51,23 @@ img {
     margin: auto;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+}
+#firstcard:hover {
+    transform: scaleX(2.0);
+    transition: transform 0.3s;
+    transform: translateX(200px);
+}
+#secondcard:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+#thirdcard:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 #secondcard {
-    background-color: white;
+    background-color: darkcyan;
     width: 30%;
     height: auto;
     border-radius: 20px;
@@ -59,9 +75,10 @@ img {
     margin: auto;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 #thirdcard {
-    background-color: white;
+    background-color: darkcyan;
     width: 30%;
     height: auto;
     border-radius: 20px;
@@ -69,10 +86,11 @@ img {
     margin: auto;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 p {
     font-size: larger;
-    padding: 20px;
+;
 }
 .selfpotrait {
     width: 90%;
@@ -87,9 +105,77 @@ p {
     justify-content: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    width: 50%;
     border: solid 1px black;
-    width: 25%;
     height: auto;
     background-color: darkcyan;
-    margin: 0 auto;
+    margin-left: 100px;
+    padding: 10px;
+    margin-right: 100px;
 }
+.selfbox img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+form {
+    background-image: none;
+    color: white;
+    font-size: larger;
+}
+@media (min-width: 600px) {
+    #container {
+        flex-direction: row;
+    }
+}
+@media (max-width: 599px) {
+    #container {
+        flex-direction: column;
+    }
+}
+input {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+.submit {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+    width: 30%;
+}
+.inter {
+    background-color: darkcyan;
+    height: auto;
+    margin-bottom: 10px;
+}
+#lastpiece {
+    background-color: darkcyan;
+    height: auto;
+    margin-top: 10px;
+}
+.moreof {
+    background-color: darkcyan;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+.formbox {
+    background-color: darkcyan;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 30%;
+}
+.ovrcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
