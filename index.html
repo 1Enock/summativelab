@@ -10,14 +10,12 @@
 <body>
     <nav class="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#about">inquiry</a></li>
             </ul>
         </nav>
     <header>
-        <h1>Enocksite Enterprises</h1>
-        <p> Welcome to the greatest company of tech bros who love coding.</p>
-        
+        <h1>Enocksite Enterprises</h1>  
     </header>
     <section id="container">
         <article id="firstcard">
@@ -70,7 +68,11 @@
         <input type="email" id="email" name="email" required>
         <br>
         <label for="service_required" > Service: </label>
-        <input type="text" id="service_required" name="service_required" required>
+        <select id="service_required" name="service_required">
+            <option value="rendering"> Rendering </option>
+            <option value="gamedev"> Game development </option>
+            <option value="webdev"> Web development </option>
+        </select>
         <br>
         <input class="submit" type="submit" value="Submit">
     </form>

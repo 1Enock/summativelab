@@ -2,6 +2,9 @@
     background-image: url("https://plus.unsplash.com/premium_photo-1690297733164-958ea1f806ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cXVhbnR1bSUyMHBoeXNpY3N8ZW58MHx8MHx8fDA%3D");
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 h1 {
     font-size: 60px;
@@ -15,6 +18,10 @@ h1 {
     top: 0;
     padding: 10px;
     text-align: center;
+}
+.navbar a:hover {
+    color: tomato;
+    transform: scale(2);
 }
 li {
     display: inline;
@@ -54,9 +61,8 @@ img {
     padding: 10px;
 }
 #firstcard:hover {
-    transform: scaleX(2.0);
+    transform: scale(1.05);
     transition: transform 0.3s;
-    transform: translateX(200px);
 }
 #secondcard:hover {
     transform: scale(1.05);
@@ -92,6 +98,12 @@ p {
     font-size: larger;
 ;
 }
+.ovrcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 .selfpotrait {
     width: 90%;
     height: auto;
@@ -105,32 +117,58 @@ p {
     justify-content: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    width: 50%;
+    width: 70%;
     border: solid 1px black;
-    height: auto;
+    height: 80%;
     background-color: darkcyan;
-    margin-left: 100px;
     padding: 10px;
-    margin-right: 100px;
 }
 .selfbox img:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
 }
-
+.formbox {
+    background-color: darkcyan;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 30%;
+}
 form {
     background-image: none;
     color: white;
-    font-size: larger;
+    font-size: larger;;
 }
 @media (min-width: 600px) {
     #container {
         flex-direction: row;
     }
+    .ovrcontainer {
+        flex-direction: row;
+    }
 }
 @media (max-width: 599px) {
+    h1 {
+        font-size: 35px;
+    }
+    .navbar a {
+        font-size: 20px;
+        padding: 20px;
+    }
     #container {
         flex-direction: column;
+        height: auto;
+    }
+    .ovrcontainer {
+        flex-direction: column;
+    }
+    #firstcard, #secondcard, #thirdcard, .selfbox, .formbox {
+        width: 80%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .selfbox {
+        margin: 0 auto;
     }
 }
 input {
@@ -149,6 +187,13 @@ input {
     margin-left: 30px;
     width: 30%;
 }
+select {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
 .inter {
     background-color: darkcyan;
     height: auto;
@@ -165,17 +210,6 @@ input {
     margin-top: 10px;
     padding: 10px;
 }
-.formbox {
-    background-color: darkcyan;
-    height: auto;
-    margin-top: 10px;
-    padding: 10px;
-    width: 30%;
-}
-.ovrcontainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
+
+
 
