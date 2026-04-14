@@ -211,6 +211,53 @@ select {
     margin-top: 10px;
     padding: 10px;
 }
-
-
-
+#firstbox {
+    background-color: darkcyan;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+.teambox {
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+.team {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+.team:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.applicationbox {
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+.application {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+.application:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
