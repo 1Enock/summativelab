@@ -104,29 +104,33 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+
 }
 .selfpotrait {
     width: 90%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 0;
 }
 .selfbox {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     width: 70%;
-    border: solid 1px black;
     height: 80%;
-    background-color: darkcyan;
-    padding: 10px;
 }
 .selfbox img:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
+}
+.moreof {
+    background-color: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 30%;
 }
 .formbox {
     background-color: darkcyan;
