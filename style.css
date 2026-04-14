@@ -253,7 +253,8 @@ h2 {
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin: 20px;
-    background-color: cornsilk;
+    background-color: cornsilk;;
+    font-size: larger;
 }
 .team img {
     width: 90%;
@@ -324,4 +325,76 @@ h2 {
     color: black;
     font-size: medium;
     padding: 10px;
+}
+.team2 {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    background-color: blue;
+    color: orange;
+}
+.teambox2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+.team2 img {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+.team2:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.applicationbox2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+.application2 {
+    background-color: blue;
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    color: orange;
+}
+.application2 img {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+.application2:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.formbox3 {
+    background-color: blue;
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    color: orange;
+
+}
+.formbox3 label {
+    color: orange;
+}
+.formbox3 h3 {
+    color: orange;
 }
