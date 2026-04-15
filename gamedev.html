@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div id="wholedoc">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enocksite</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <div id="wholedoc">
     <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -51,8 +51,12 @@
     </section>
     <br><br>
     <br><br>
-    <div class="formbox3">
-          <form>
+        <div class="formbox3">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY">
+                <input type="hidden" name="subject" value="New Game Development Client Registration">
+                <input type="hidden" name="from_name" value="Enocksite Enterprises">
+                <input type="checkbox" name="botcheck" style="display: none;">
         <h3> Register yourself as a client of Enocksite Enterprises </h3>
         <label for="name"> Name: </label>
         <input type="text" id="name" name="name" required>
@@ -84,4 +88,6 @@
             </ul>
         </nav>
     </footer>
+</div>
 </body>
+</html>

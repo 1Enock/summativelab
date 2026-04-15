@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div id="wholedoc">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+      <div id="wholedoc">
     <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -51,8 +51,12 @@
     </section>
     <br><br>
     <br><br>
-    <div class="formbox2">
-          <form>
+        <div class="formbox2">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="95df8316-b10b-4686-861f-952d400b4374">
+                <input type="hidden" name="subject" value="New Rendering Client Registration">
+                <input type="hidden" name="from_name" value="Enocksite Enterprises">
+                <input type="checkbox" name="botcheck" style="display: none;">
         <h3> Register yourself as a client of Enocksite Enterprises </h3>
         <label for="name"> Name: </label>
         <input type="text" id="name" name="name" required>
@@ -80,5 +84,6 @@
         </nav>
        
     </footer>
+</div>
     </body>
     </html>

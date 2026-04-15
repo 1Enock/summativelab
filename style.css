@@ -175,6 +175,18 @@ form {
     .selfbox {
         margin: 0 auto;
     }
+    #firstbox {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .teambox, .applicationbox {
+        width: 80%;
+        height: auto;
+    }
+    .formbox, .formbox2, .formbox3 {
+        width: 80%;
+    }
+
 }
 input {
     width: 40%;
