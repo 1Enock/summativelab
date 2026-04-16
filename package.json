@@ -1,0 +1,25 @@
+{
+  "name": "summativelab",
+  "version": "1.0.0",
+  "description": "The tech industry is filled with many different types of professionals to help accomplish a desired output and task. It gets tedious to try and get all this sorts of professionals on the same wavelength and make the project flawless.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1Enock/summativelab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/1Enock/summativelab/issues"
+  },
+  "homepage": "https://github.com/1Enock/summativelab#readme",
+  "devDependencies": {
+    "jsdom": "^29.0.2",
+    "vitest": "^4.1.4"
+  }
+}

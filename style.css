@@ -41,6 +41,7 @@ a {
     align-items: center;
     font-weight: bolder;
     color: white;
+    margin: 0 auto;
 }
 #container {
     display: flex;
