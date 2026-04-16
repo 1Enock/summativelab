@@ -1,4 +1,3 @@
-# summativelab
 # Problem Faced
 The tech industry is filled with many different types of professionals to help accomplish a desired output and task.
 It gets tedious to try and get all this sorts of professionals on the same wavelength and make the project flawless.
