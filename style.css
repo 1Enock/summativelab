@@ -1,10 +1,15 @@
-#wholedoc {
-    background-image: url("https://plus.unsplash.com/premium_photo-1690297733164-958ea1f806ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cXVhbnR1bSUyMHBoeXNpY3N8ZW58MHx8MHx8fDA%3D");
-    width: 100%;
-    height: 100%;
+
+html, body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    min-height: 100%;
+}
+
+body {
+    background-image: url("https://plus.unsplash.com/premium_photo-1739755727361-a9cc3377e8e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    min-height: 100vh;
 }
 h1 {
     font-size: 60px;
@@ -64,14 +69,17 @@ img {
 #firstcard:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
+    border: 2px solid cornsilk;
 }
 #secondcard:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
+    border: 2px solid cornsilk;
 }
 #thirdcard:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
+    border: 2px solid cornsilk;
 }
 #secondcard {
     background-color: darkcyan;
@@ -167,8 +175,8 @@ form {
     .ovrcontainer {
         flex-direction: column;
     }
-    #firstcard, #secondcard, #thirdcard, .selfbox, .formbox {
-        width: 80%;
+    #firstcard, #secondcard, #thirdcard, .selfbox, .formbox, .moreof {
+        width: 90%;
         margin-bottom: 20px;
         height: auto;
     }
@@ -273,10 +281,6 @@ h2 {
     height: auto;
     border-radius: 20px;
 }
-.team:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-}
 .applicationbox {
     display: flex;
     flex-direction: row;
@@ -299,10 +303,6 @@ h2 {
     width: 90%;
     height: auto;
     border-radius: 20px;
-}
-.application:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
 }
 .formbox2 {
     background-color: cornsilk;
