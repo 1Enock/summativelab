@@ -19,5 +19,6 @@ All clients can access the various services offered and contract professionals t
 * Complementary colors for the pages
 * API is used for the form's  workability
 
-
+## The deployment link
+[the gitHub page deployment link] (https://1enock.github.io/summativelab/)
 
