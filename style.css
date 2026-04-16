@@ -152,50 +152,6 @@ form {
     color: white;
     font-size: larger;;
 }
-@media (min-width: 600px) {
-    #container {
-        flex-direction: row;
-    }
-    .ovrcontainer {
-        flex-direction: row;
-    }
-}
-@media (max-width: 599px) {
-    h1 {
-        font-size: 35px;
-    }
-    .navbar a {
-        font-size: 20px;
-        padding: 20px;
-    }
-    #container {
-        flex-direction: column;
-        height: auto;
-    }
-    .ovrcontainer {
-        flex-direction: column;
-    }
-    #firstcard, #secondcard, #thirdcard, .selfbox, .formbox, .moreof {
-        width: 90%;
-        margin-bottom: 20px;
-        height: auto;
-    }
-    .selfbox {
-        margin: 0 auto;
-    }
-    #firstbox {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .teambox, .applicationbox {
-        width: 80%;
-        height: auto;
-    }
-    .formbox, .formbox2, .formbox3 {
-        width: 80%;
-    }
-
-}
 input {
     width: 40%;
     padding: 10px;
@@ -241,7 +197,51 @@ h2 {
     padding: 10px;
     width: 40%;
 }
+@media (min-width: 600px) {
+    #container {
+        flex-direction: row;
+    }
+    .ovrcontainer {
+        flex-direction: row;
+    }
+}
+@media (max-width: 599px) {
+    h1 {
+        font-size: 35px;
+    }
+    .navbar a {
+        font-size: 20px;
+        padding: 20px;
+    }
+    #container {
+        flex-direction: column;
+        height: auto;
+    }
+    .ovrcontainer {
+        flex-direction: column;
+    }
+    #firstcard, #secondcard, #thirdcard, .selfbox, .formbox, .moreof {
+        width: 90%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .selfbox {
+        margin: 0 auto;
+    }
+    #firstbox {
+        flex-direction: column;
+        height: auto;
+    }
+    .teambox, .applicationbox {
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+    .formbox, .formbox2, .formbox3 {
+        width: 80%;
+    }
 
+}
 #firstbox {
     background-color: none;
     height: auto;
@@ -409,4 +409,22 @@ h2 {
 }
 .formbox3 h3 {
     color: orange;
+}
+
+@media (max-width: 599px) {
+    .teambox, .applicationbox, .teambox2, .applicationbox2 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .team, .application, .team2, .application2 {
+        width: 90%;
+        margin: 12px auto;
+    }
+    .formbox2, .formbox3 {
+        width: 90%;
+    }
 }
