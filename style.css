@@ -23,6 +23,7 @@ h1 {
     top: 0;
     padding: 10px;
     text-align: center;
+    position: sticky;
 }
 .navbar a:hover {
     color: tomato;
