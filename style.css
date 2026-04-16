@@ -410,6 +410,23 @@ h2 {
 .formbox3 h3 {
     color: orange;
 }
+.formbox4 {
+    background-color: blue;
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    color: orange;
+
+}
+.formbox4 input {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
 
 @media (max-width: 599px) {
     .teambox, .applicationbox, .teambox2, .applicationbox2 {
@@ -424,7 +441,7 @@ h2 {
         width: 90%;
         margin: 12px auto;
     }
-    .formbox2, .formbox3 {
+    .formbox2, .formbox3, .formbox4 {
         width: 90%;
     }
 }

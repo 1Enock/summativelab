@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enocksite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inquiry.html">Inquiry</a></li>
+            </ul>
+        </nav>
+    <header>
+        <h1>Enocksite Enterprises</h1>  
+    </header>
+    <p> Please type your inquiry below:</p>
+    <br><br>
+    <div class="formbox4">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="95df8316-b10b-4686-861f-952d400b4374">
+            <input type="hidden" name="subject" value="New Inquiry from Enocksite Website">
+            <input type="hidden" name="from_name" value="Enocksite Enterprises">
+            <input type="checkbox" name="botcheck" style="display: none;">
+            <label for="name"> Name: </label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+             <label for="service"> Service Required: </label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="rendering">Rendering</option>
+                <option value="game_development">Game Development</option>
+                <option value="web_development">Web Development</option>
+            </select>
+            <br><br>
+            <label for="message"> Message: </label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <br><br>
+            <button type="submit">Submit Inquiry</button>
+        </form>
+    </div>
+</body>
+</html>
