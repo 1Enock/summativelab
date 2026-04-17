@@ -103,20 +103,21 @@ img {
 }
 
 #firstcard:hover, #secondcard:hover, #thirdcard:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
     background: #fff;
+    border: 2px solid red;
 }
 
 /* Typography */
 p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.6;
     color: #555;
 }
 
 h2 {
-    color: #667eea;
+    color: orange;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
@@ -366,11 +367,11 @@ input:focus, select:focus {
     
     .navbar a {
         font-size: 14px;
-        padding: 10px 15px;
+        padding: 10px;        ;
     }
     
     li {
-        display: block;
+        display: inline;
         margin: 5px 0;
     }
     
