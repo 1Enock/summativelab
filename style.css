@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html, body {
     margin: 0;
@@ -5,124 +12,137 @@ html, body {
 }
 
 body {
-    background-image: url("https://plus.unsplash.com/premium_photo-1739755727361-a9cc3377e8e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D");
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: #333;
 }
+
+/* Header & Navigation */
 h1 {
-    font-size: 60px;
-    font-weight: bolder;
+    font-size: 48px;
+    font-weight: 700;
     text-align: center;
-    color: tomato;;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0 10px 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .navbar {
     width: 100%;
     height: auto;
     top: 0;
-    padding: 10px;
+    padding: 15px 0;
     text-align: center;
     position: sticky;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .navbar a:hover {
-    color: tomato;
-    transform: scale(2);
+    color: #ffd700;
+    transition: all 0.3s ease;
 }
+
 li {
     display: inline;
     justify-content: space-around;
-    font-size: larger;
+    font-size: 16px;
     color: white;
+    margin: 0 15px;
 }
+
 a {
-    font-size: 40px;
-    padding: 100px;
+    font-size: 16px;
+    padding: 10px 20px;
     align-items: center;
-    font-weight: bolder;
+    font-weight: 600;
     color: white;
-    margin: 0 auto;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
 }
+
+/* Cards Container */
 #container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     height: 100%;
+    padding: 40px 20px;
+    gap: 20px;
 }
+
+/* Image Styles */
 img {
-    width: 90%;
-    height: 300px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
     align-self: center;
-    border-radius: 20px;
-    padding: 5%;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
-#firstcard {
-    background-color: darkcyan;
+
+/* Individual Cards */
+#firstcard, #secondcard, #thirdcard {
+    background: rgba(255, 255, 255, 0.95);
     width: 30%;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     margin: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
-#firstcard:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-    border: 2px solid cornsilk;
+
+#firstcard:hover, #secondcard:hover, #thirdcard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    background: #fff;
 }
-#secondcard:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-    border: 2px solid cornsilk;
-}
-#thirdcard:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-    border: 2px solid cornsilk;
-}
-#secondcard {
-    background-color: darkcyan;
-    width: 30%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-#thirdcard {
-    background-color: darkcyan;
-    width: 30%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
+
+/* Typography */
 p {
-    font-size: larger;
-;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
 }
+
+h2 {
+    color: #667eea;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 12px 0;
+}
+
+/* Overview Container */
 .ovrcontainer {
+    background: rgba(255, 255, 255, 0.9);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
+    padding: 40px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
+
 .selfpotrait {
-    width: 75%;
+    width: 40%;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     padding: 0;
 }
+
 .selfbox {
     display: flex;
     flex-direction: column;
@@ -136,69 +156,197 @@ p {
     transform: scale(1.05);
     transition: transform 0.3s;
 }
+
 .moreof {
-    background-color: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     border-radius: 20px;
     width: 30%;
 }
+
+.moreof a {
+    color: #667eea;
+    font-size: 15px;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.moreof a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
 .formbox {
-    background-color: darkcyan;
+    background: rgba(255, 255, 255, 0.95);
     height: auto;
     margin-top: 10px;
-    padding: 10px;
+    padding: 25px;
     width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
+
 form {
     background-image: none;
-    color: white;
-    font-size: larger;;
+    color: #333;
+    font-size: 15px;
 }
-input {
-    width: 40%;
-    padding: 10px;
+
+input, select {
+    width: 80%;
+    padding: 12px 15px;
     margin: 10px 0;
-    border: none;
-    border-radius: 5px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    font-size: 14px;
 }
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
 .submit {
-    background-color: white;
-    color: black;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    margin-left: 30px;
+    margin-left: 10px;
+    width: auto;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Team & Application Boxes */
+.teambox, .applicationbox, .teambox2, .applicationbox2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.team, .application, .team2, .application2 {
+    width: 50%;
+    height: auto;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    margin: 0;
+    background: rgba(255, 255, 255, 0.95);
+    transition: all 0.3s ease;
+}
+
+.team:hover, .application:hover, .team2:hover, .application2:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.team img, .application img, .team2 img, .application2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.team, .application {
+    color: #333;
+}
+
+.team2, .application2 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Form Boxes */
+.formbox2, .formbox3, .formbox4 {
+    background: rgba(255, 255, 255, 0.95);
     width: 30%;
-}
-select {
-    width: 40%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}
-.inter {
-    background-color: darkcyan;
     height: auto;
-    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    color: #333;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
-#lastpiece {
-    background-color: darkcyan;
-    height: auto;
-    margin-top: 10px;
+
+.formbox2 label, .formbox3 label, .formbox4 label {
+    color: #333;
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: 500;
 }
-h2 {
-    color: cornsilk;
-    font-size: 30px;
+
+.formbox2 h3, .formbox3 h3, .formbox4 h3 {
+    color: #667eea;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formbox3, .formbox4 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.formbox3 label, .formbox4 label {
+    color: white;
+}
+
+.formbox3 h3, .formbox4 h3 {
+    color: #ffd700;
+}
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px 20px;
     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 30px;
 }
-.moreof {
-    background-color: darkcyan;
-    height: auto;
-    margin-top: 10px;
-    padding: 10px;
-    width: 40%;
+
+.footer p {
+    color: #fff;
+    margin: 5px 0;
 }
+
+.footer a {
+    color: #ffd700;
+    font-size: 14px;
+    padding: 0;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
 @media (min-width: 600px) {
     #container {
         flex-direction: row;
@@ -206,244 +354,75 @@ h2 {
     .ovrcontainer {
         flex-direction: row;
     }
+    .teambox, .applicationbox, .teambox2, .applicationbox2 {
+        flex-direction: row;
+    }
 }
+
 @media (max-width: 599px) {
     h1 {
         font-size: 35px;
     }
+    
     .navbar a {
-        font-size: 20px;
-        padding: 20px;
+        font-size: 14px;
+        padding: 10px 15px;
     }
+    
+    li {
+        display: block;
+        margin: 5px 0;
+    }
+    
     #container {
         flex-direction: column;
         height: auto;
+        padding: 20px;
     }
+    
     .ovrcontainer {
         flex-direction: column;
+        padding: 20px;
+        margin: 10px;
     }
-    #firstcard, #secondcard, #thirdcard, .selfbox, .formbox, .moreof {
+    
+    #firstcard, #secondcard, #thirdcard {
         width: 90%;
         margin-bottom: 20px;
-        height: auto;
     }
-    .selfbox {
-        margin: 0 auto;
+    
+    .selfbox, .selfpotrait, .moreof {
+        width: 90%;
+        margin-bottom: 20px;
     }
-    #firstbox {
-        flex-direction: column;
-        height: auto;
-    }
-    .teambox, .applicationbox {
-        width: 80%;
-        height: auto;
-        margin: 20px auto;
-    }
-    .formbox, .formbox2, .formbox3 {
-        width: 80%;
-    }
-
-}
-#firstbox {
-    background-color: none;
-    height: auto;
-    margin-top: 10px;
-    padding: 10px;
-}
-
-#firstbox p {
-    font-size: larger;
-}
-h2 {
-    color: cornsilk;
-    font-size: 30px;
-    text-align: center;
-}
-.teambox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-}
-.team {
-    width: 50%;
-    height: auto;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px;
-    background-color: cornsilk;;
-    font-size: larger;
-}
-.team img {
-    width: 90%;
-    height: auto;
-    border-radius: 20px;
-}
-.applicationbox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-}
-.application {
-    background-color: cornsilk;
-    width: 50%;
-    height: auto;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px;
-}
-.application img {
-    width: 90%;
-    height: auto;
-    border-radius: 20px;
-}
-.formbox2 {
-    background-color: cornsilk;
-    width: 30%;
-    height: auto;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    color: black;
-
-}
-.formbox2 label {
-    color: black;
-}
-.formbox2 h3 {
-    color: black;
-}
-.footer {
-    background-color: cornsilk;
-    height: 40px;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center; justify-content: space-around;
-    bottom: 0;
-}
-.footer a {
-    color: black;
-    font-size: medium;
-    padding: 10px;
-}
-.team2 {
-    width: 50%;
-    height: auto;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px;
-    background-color: blue;
-    color: orange;
-}
-.teambox2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-}
-.team2 img {
-    width: 90%;
-    height: auto;
-    border-radius: 20px;
-}
-.team2:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-}
-.applicationbox2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-}
-.application2 {
-    background-color: blue;
-    width: 50%;
-    height: auto;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px;
-    color: orange;
-}
-.application2 img {
-    width: 90%;
-    height: auto;
-    border-radius: 20px;
-}
-.application2:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-}
-.formbox3 {
-    background-color: blue;
-    width: 30%;
-    height: auto;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    color: orange;
-
-}
-.formbox3 label {
-    color: orange;
-}
-.formbox3 h3 {
-    color: orange;
-}
-.formbox4 {
-    background-color: blue;
-    width: 30%;
-    height: auto;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    color: orange;
-
-}
-.formbox4 input {
-    width: 40%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}
-
-@media (max-width: 599px) {
+    
     .teambox, .applicationbox, .teambox2, .applicationbox2 {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        padding: 15px;
     }
+    
     h2 {
-        font-size: 25px;
+        font-size: 22px;
     }
+    
     .team, .application, .team2, .application2 {
         width: 90%;
-        margin: 12px auto;
+        margin: 10px auto;
     }
-    .formbox2, .formbox3, .formbox4 {
+    
+    .formbox, .formbox2, .formbox3, .formbox4 {
         width: 90%;
+        padding: 20px;
+    }
+    
+    input, select {
+        width: 100%;
+    }
+    
+    .submit {
+        width: 100%;
+        margin-left: 0;
     }
 }
