@@ -1,73 +1,57 @@
-import { describe, it, expect, beforeEach } from "vitest";
+/**
+ * @jest-environment jsdom
+ */
 
-// Build a minimal DOM that matches index.html's card structure
-function setupDOM() {
-    const dom = new JSDOM(`<!DOCTYPE html>
-<html>
-<body>
-  <article id="firstcard"></article>
-  <article id="secondcard"></article>
-  <article id="thirdcard"></article>
-</body>
-</html>`);
-
-    // Expose globals the script expects
-    global.document = dom.window.document;
-    global.window = dom.window;
-    return dom;
-}
-
-// Dynamically re-import the script so each test gets a fresh run
-async function loadScript() {
-    // Bust module cache with a unique query so each test re-registers listeners
-    const url = `../index.js?t=${Date.now()}`;
-    await import(url);
-}
+import { jest } from "@jest/globals";
+import { wireCardNavigation } from "./index.js";
 
 describe("Card click navigation", () => {
-    beforeEach(() => {
-        setupDOM();
-        // Replace location.href with a writable mock
-        Object.defineProperty(global.window, "location", {
-            value: { href: "" },
-            writable: true,
-            configurable: true,
-        });
-    });
+  let navigateMock;
 
-    it("firstcard click navigates to render.html", async () => {
-        await loadScript();
-        document.getElementById("firstcard").click();
-        expect(window.location.href).toBe("render.html");
-    });
+  beforeEach(() => {
+    document.body.innerHTML = `
+      <article id="firstcard"></article>
+      <article id="secondcard"></article>
+      <article id="thirdcard"></article>
+    `;
+    navigateMock = jest.fn();
+    wireCardNavigation(document, navigateMock);
+  });
 
-    it("secondcard click navigates to gamedev.html", async () => {
-        await loadScript();
-        document.getElementById("secondcard").click();
-        expect(window.location.href).toBe("gamedev.html");
-    });
+  it("firstcard click navigates to render.html", () => {
+    document.getElementById("firstcard").click();
+    expect(navigateMock).toHaveBeenCalledWith("render.html");
+  });
 
-    it("thirdcard click navigates to webdev.html", async () => {
-        await loadScript();
-        document.getElementById("thirdcard").click();
-        expect(window.location.href).toBe("webdev.html");
-    });
+  it("secondcard click navigates to gamedev.html", () => {
+    document.getElementById("secondcard").click();
+    expect(navigateMock).toHaveBeenCalledWith("gamedev.html");
+  });
+
+  it("thirdcard click navigates to webdev.html", () => {
+    document.getElementById("thirdcard").click();
+    expect(navigateMock).toHaveBeenCalledWith("webdev.html");
+  });
 });
 
 describe("Card element existence", () => {
-    beforeEach(() => {
-        setupDOM();
-    });
+  beforeEach(() => {
+    document.body.innerHTML = `
+      <article id="firstcard"></article>
+      <article id="secondcard"></article>
+      <article id="thirdcard"></article>
+    `;
+  });
 
-    it("firstcard exists in the DOM", () => {
-        expect(document.getElementById("firstcard")).not.toBeNull();
-    });
+  it("firstcard exists in the DOM", () => {
+    expect(document.getElementById("firstcard")).not.toBeNull();
+  });
 
-    it("secondcard exists in the DOM", () => {
-        expect(document.getElementById("secondcard")).not.toBeNull();
-    });
+  it("secondcard exists in the DOM", () => {
+    expect(document.getElementById("secondcard")).not.toBeNull();
+  });
 
-    it("thirdcard exists in the DOM", () => {
-        expect(document.getElementById("thirdcard")).not.toBeNull();
-    });
+  it("thirdcard exists in the DOM", () => {
+    expect(document.getElementById("thirdcard")).not.toBeNull();
+  });
 });

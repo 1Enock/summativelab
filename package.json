@@ -4,7 +4,11 @@
   "description": "The tech industry is filled with many different types of professionals to help accomplish a desired output and task. It gets tedious to try and get all this sorts of professionals on the same wavelength and make the project flawless.",
   "main": "index.js",
   "scripts": {
-    "test": "vitest run"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "clearMocks": true
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,8 @@
   },
   "homepage": "https://github.com/1Enock/summativelab#readme",
   "devDependencies": {
-    "jsdom": "^29.0.2",
-    "vitest": "^4.1.4"
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
+    "jsdom": "^26.1.0"
   }
 }
