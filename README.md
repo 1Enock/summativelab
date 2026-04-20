@@ -21,3 +21,6 @@ All clients can access the various services offered and contract professionals t
 ## The deployment link
 [the gitHub page deployment link] (https://1enock.github.io/summativelab/)
 
+## API used
+I used the web3forms.com API to handle the forms' functionality across the cards and the inquiry page.
+
